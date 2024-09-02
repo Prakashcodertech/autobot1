@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Scrolling Numbers</title>
+    <style>
+        
+    .cont-for-slide{
+
+      background-color: orange;
+      animation: 5s slide infinite linear;
+    }
+    .cont-for-sliding{
+
+      background-color: green;
+      display: flex;
+     
+    }
+
+    @keyframes slide {
+
+      from{
+             transform: translateX(0);
+      }
+      to{
+
+              transform: translatX(-100%);
+      }
+      
+    }
+
+
+    </style>
+</head>
+<body>
+  
+
+  <div class="cont-for-slide">
+    <div class="cont-for-sliding">
+      <img alt="hii">
+    </div>
+    
+
+  </div>
+
+
+
+</body>
+</html>
