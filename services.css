@@ -102,9 +102,256 @@
 .cont-for-marquee{
 
     background-color: #C9D9F9;
-    height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+   
+    
+}
+
+
+
+.cont-for-marquee-list{
+
+    display: inline-block;
+    width: 100%;
+}
+.marquee-list{
+
+    width: 100%;
+    display: flex;
+    animation: 10s slide linear infinite;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+   
+
+}
+.marquee-list li{
+
+    flex: 1;
+}
+
+@keyframes slide {
+
+    0% {
+
+        transform: translateX(0);
+    }
+    100%{
+
+        transform: translateX(-100%);
+       
+    }
+    
+}
+/*following code for services lists*/
+
+.cont-for-services{
+
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 200px;
+    flex-direction: column;
     
+}
+.cont-for-services-column{
+
+
+   display: flex;
+   justify-content: space-between;
+   min-width: 900px;
+   margin-top:100px;
+   
+
+
+}
+.cont-for-services-list{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 400px;
+
+  
+
+}
+.cont-for-services-list li{
+
+    margin-top: 30px;
+  
+}
+
+.cont-for-services-list li img{
+
+    height: 100px;
+
+}
+.cont-for-services-list li h1{
+
+    font-family: Inter,'Courier New', Courier, monospace,sans-serif;
+    color: white;
+}
+.cont-for-services li h3{
+
+    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.cont-for-services-list li button{
+
+    background-color: #235298;
+    padding: 20px 60px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: Inter,'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/*following code for fotter...*/
+
+.cont-for-fotter-bg{
+
+
+    background-color: #13646A;
+    height: 500px;
+    padding-top: 100px;
+}
+.cont-for-fotter{
+
+   display: flex;
+   
+   height: 300px;
+   flex-wrap: wrap;
+ 
+
+
+}
+.cont-for-company-info{
+
+    flex: 1;
+    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 100px;
+}
+.cont-for-fotter-links{
+
+    flex: 1;
+    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 100px;
+}
+.cont-for-fotter-contact{
+
+    flex: 1;
+    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 100px;
+}
+.cont-for-fotter-follow-us{
+
+    flex: 1;
+    padding-top: 40px;
+    color: black;
+    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100px;
+}
+.cont-for-company-name{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-for-company-name h1{
+
+
+    font-family: inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    color: black;
+    font-size: 40px;
+  
+
+}
+.cont-for-compahy-para h3{
+
+    color: rgb(194, 193, 193);
+    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    
+}
+.cont-for-compahy-para{
+
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+
+.cont-for-fotter-link-list{
+
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.cont-for-fotter-link-list li{
+
+    padding: 10px 0px;
+    color: white;
+}
+.cont-for-fotter-contact-details{
+
+    list-style: none;
+    padding-top: 20px;
+}
+.cont-for-fotter-contact-details li{
+
+    padding: 10px 0px;
+    font-weight: 500;
+    color: wheat;
+    
+}
+
+.cont-for-copy-right{
+
+    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cont-for-fotter-contact-logo{
+
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+}
+.cont-for-fotter-contact-logo li img{
+
+    height: 40px;
+    
+}
+.cont-for-fotter-contact-logo li{
+
+    padding: 10px 10px;
 }
