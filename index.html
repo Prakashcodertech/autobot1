@@ -13,16 +13,32 @@
 <body>
     
     <div class="cont-1">
+        <div class="cont-2">
         <div class="cont-for-header">
             <div class="AutoBot-title">
                 <h1>AutoBot</h1>
             </div>
             <ul class="navi-links">
-               <li><a>Home</a></li>
+               <li><a href="index.html">Home</a></li>
                <li><a>About Us</a></li>
-               <li><a>Services</a></li>
+               <li><a href="services.html">Services</a></li>
                <li><a>Contact Us</a></li>
+              
             </ul>
+            <div class="navbar" id="navibaricon">
+                <img src="navbar.svg" height="20px">
+            </div>
+            <div  class="navi-links-when-click-navicon" id="navi-links-when-click-naviconid">
+            <ul>
+                <li class="closeIcon" id="closeIcon"><img src="close.svg"></li>
+                <a href="index.html"><li>Home</li></a>
+                <a><li>About Us</li></a>
+                <a href="services.html"><li>Services</li></a>
+                <a><li>Contact Us</li></a>
+               
+             </ul>
+             </div>
+           
         </div>
         
         <div class="cont-for-welcome">
@@ -84,45 +100,57 @@
             </div>
 
         </div>
-        <div  class="cont-for-why-dont-use-bot">
-            <div class="cont-for-why-dont-use-bot-txt">
-                <div class="cont-for-manual-messaging-title">
-                    <h1>Why don’t you use bot for your repeated works</h1>
-                </div>
-                <div class="cont-for-manual-messaging-para">
-                    <h3>Why spend valuable time on repetitive tasks when a bot can handle them for you? Automating routine work not only saves time but also reduces errors and frees you up to focus on more important and creative aspects of your business. With a bot, you can streamline operations, improve efficiency, and ensure consistency in your processes. Let the bot take care of the repetitive work so you can concentrate on what truly matters.</h3>
-                </div>
+        </div>
+    </div>
+    <div  class="cont-for-why-dont-use-bot">
+        <div class="cont-for-why-dont-use-bot-txt">
+            <div class="cont-for-manual-messaging-title">
+                <h1>Why don’t you use bot for your repeated works</h1>
+            </div>
+            <div class="cont-for-manual-messaging-para">
+                <h3>Why spend valuable time on repetitive tasks when a bot can handle them for you? Automating routine work not only saves time but also reduces errors and frees you up to focus on more important and creative aspects of your business. With a bot, you can streamline operations, improve efficiency, and ensure consistency in your processes. Let the bot take care of the repetitive work so you can concentrate on what truly matters.</h3>
             </div>
         </div>
     </div>
 
 
     <div class="cont-for-what-bot-do">
+        
          <div class="cont-for-what-bot-do-title">
               <h1>What Does Bot Do</h1>
          </div>
-        <div class="cont-for-what-bot-do-list">
+        <div class="cont-for-what-bot-do-list"> 
             <div class="what-bot-do-list">
                 <div class="white-box-for-what-bot-do">
-                    <h3>Bots can automatically reply to direct messages or comments, handling common queries and providing information without human intervention.</h3>
+                    <div class="white-box-for-what-bot-do-image">
+                        <img src="Group 9.svg">
+                    </div>
+                    <h3>1, Bots can automatically reply to direct messages or comments, handling common queries and providing information without human intervention.</h3>
                 </div>
                 <div class="white-box-for-what-bot-do">
-                    <h3>Bots can automate the scheduling and posting of content across Meta platforms, ensuring consistent and timely updates without manual effort.</h3>
+                    <div class="white-box-for-what-bot-do-image">
+                        <img src="Group 10.svg">
+                    </div>
+                    <h3>2, Bots can automate the scheduling and posting of content across Meta platforms, ensuring consistent and timely updates without manual effort.</h3>
                 </div>
                 <div class="white-box-for-what-bot-do">
-                    <h3>Bots can automatically reply to direct messages or comments, handling common queries and providing information without human intervention.</h3>
+                    <div class="white-box-for-what-bot-do-image">
+                        <img src="Group 11.svg">
+                    </div>
+                    <h3>3, Bots can automatically reply to direct messages or comments, handling common queries and providing information without human intervention.</h3>
                 </div>
                 <div class="white-box-for-what-bot-do">
-                    <h3>Bots can run interactive campaigns, such as quizzes or surveys, to engage users and gather feedback or insights.</h3>
+                    <div class="white-box-for-what-bot-do-image">
+                        <img src="Group 12.svg">
+                    </div>
+                    <h3>4, Bots can run interactive campaigns, such as quizzes or surveys, to engage users and gather feedback or insights.</h3>
                 </div>
             </div>
-        </div>
-        <div class="thank-you">
-            <h1>Thank You!</h1>
         </div>
         
     </div>
     <div class="cont-for-fotter-bg">
+        <div class="cont-for-fotter-bg2">
         <div class="cont-for-fotter">
             <div class="cont-for-company-info">
                 <div class="cont-for-company-name">
@@ -168,9 +196,36 @@
         <div class="cont-for-copy-right">
             <h4>© 2024 AutoBot. All Rights Reserved.</h4>
         </div>
+        </div>
     </div>
+
+    <script>
+
+        let a=document.getElementById("navibaricon");
+        let b=document.getElementById("navi-links-when-click-naviconid");
+       
+           
+        a.addEventListener("click",function(){
+
     
-    
+          b.style.display='flex';
+       
+        });
+
+        let c=document.getElementById("closeIcon");
+
+        c.addEventListener("click",function(){
+
+
+            b.style.display="none";
+            
+        });
+
+
+
+
+    </script>
+
     
 
 </body>

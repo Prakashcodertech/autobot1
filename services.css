@@ -10,7 +10,7 @@
 .cont-1{
 
     background:linear-gradient(180deg,#19A6B0,#444559,#19A6B0,#444559);
-    height: 400vh;
+    
 
 }
 
@@ -46,9 +46,25 @@
     font-weight: 600;
 
 }
+.navi-links li:hover{
+
+    background-color: rgb(0, 179, 255);
+    cursor: pointer;
+    
+}
+
+.navi-links-when-click-navicon{
+
+    background-color: orange;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
 .navi-links li a{
 
     color: #F4F6FF;
+    text-decoration: none;
 }
 .AutoBot-title{
 
@@ -160,6 +176,7 @@
 
    display: flex;
    justify-content: space-between;
+   flex-direction: row;
    min-width: 900px;
    margin-top:100px;
    
@@ -227,8 +244,8 @@
 
    display: flex;
    
-   height: 300px;
-   flex-wrap: wrap;
+   
+
  
 
 
@@ -354,4 +371,41 @@
 .cont-for-fotter-contact-logo li{
 
     padding: 10px 10px;
+}
+
+/*following code for responsive*/
+
+
+@media (max-width:1024px){
+
+   
+
+     .navi-links{
+
+        display: none;
+     }
+     
+    
+.cont-for-services-column{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 900px;
+    margin-top:100px;
+    
+ 
+ 
+ }
+
+ .cont-for-fotter{
+
+    display: flex;
+    flex-direction: column;
+  
+ }
+
+
 }

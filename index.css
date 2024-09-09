@@ -9,7 +9,20 @@
 .cont-1{
 
     background:linear-gradient(180deg,#19A6B0,#444559,#19A6B0);
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cont-2{
+
+    max-width: 1400px;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    
+
 
 }
 
@@ -37,6 +50,13 @@
     align-items: center;
     justify-content: center;
 }
+.navbar{
+
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 .navi-links li{
 
 
@@ -45,9 +65,71 @@
     font-weight: 600;
 
 }
+.navi-links li:hover{
+
+    background-color: rgb(0, 179, 255);
+    cursor: pointer;
+}
+.navi-links-when-click-navicon{
+
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+
+    
+}
+
+.navi-links-when-click-navicon ul{
+
+  
+   background-color: #19A6B0;  
+   list-style: none;
+   width: 100%;
+  
+}
+.navi-links-when-click-navicon li{
+
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+.navi-links-when-click-navicon ul  a{
+
+    text-decoration: none;
+    color: white;
+    font-family: inter,poppins,sans-serif,'Courier New', Courier, monospace;
+    font-weight: 400;
+    
+    
+
+}
+.navi-links-when-click-navicon ul li:hover{
+
+    background-color: rgb(0, 179, 255);
+    cursor: pointer;
+}
+.closeIcon{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 15px;
+}
+.closeIcon img{
+
+    width: 20px;
+}
+
 .navi-links li a{
 
     color: #F4F6FF;
+    text-decoration: none;
 }
 .AutoBot-title{
 
@@ -65,7 +147,7 @@
 .cont-for-welcome{
 
     display: flex;
-    min-height: 700px;
+    flex-direction: row;
 }
 .cont-for-welcome-text{
 
@@ -136,16 +218,10 @@
 
 /*Following code for manually messaging */
 
-.cont-for-manually-messaging{
 
-    min-height: 100vh;
-
-
-}
 .cont-for-manually-messaging-video-txt{
 
     padding-bottom: 80px;
-    min-width: 1000px;
     border-radius: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -158,14 +234,12 @@
 
     
     display: flex;
-    height: 500px;
     border-radius: 20px;
     margin-top: 50px;
-    
-    
-   
-
+    flex-direction: row;
 }
+
+
 .when-answering-manually-title{
 
 
@@ -237,12 +311,13 @@
 .cont-for-why-dont-use-bot{
 
 
-    min-height: 100px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    background-color: rgb(234, 233, 233);
+
+
     
     
 }
@@ -267,6 +342,8 @@
 .cont-for-why-dont-use-bot-txt{
 
     width: 800px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .cont-for-manual-messaging-para{
 
@@ -295,7 +372,6 @@
 min-height: 100vh;
 background:linear-gradient(180deg,#444559,#19A6B0);
 display: flex;
-background-color: orange;
 flex-direction: column;
 
 
@@ -310,52 +386,37 @@ flex-direction: column;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: rgb(186, 181, 181);
+    color: rgb(248, 245, 245);
 }
 .what-bot-do-list{
 
-    
-    width: 1000px;
     display: flex;
-    flex-wrap: wrap;
-    
-
+    max-width: 1400px;
+    width: 80%;
+    flex-direction: row;
+   
 }
 .white-box-for-what-bot-do{
 
-    background-color: white;
 
-    width: 200px;
-    padding: 10px;
     font-family: poppins;
     border-radius: 25px;
     font-size: 15px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 20px;
+    flex: 1;
+    color: whitesmoke;
+    padding: 20px 20px;
+}
+.white-box-for-what-bot-do-image{
+
+    padding: 50px 0px;
 }
 .cont-for-what-bot-do-list{
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
-}
-.thank-you{
-
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Poppins,inter,'Courier New', Courier, monospace;
-    font-size: 30px;
-    flex: 1;
-    color: rgb(199, 198, 198);
-    min-width: 400px;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 /*following code for fotter...*/
 
@@ -363,15 +424,24 @@ flex-direction: column;
 
 
     background-color: #13646A;
-    height: 500px;
     padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+.cont-for-fotter-bg2{
+
+
+max-width: 1400px;
+width: 100%;
+
+}
+
 .cont-for-fotter{
 
    display: flex;
-   
-   height: 300px;
-   flex-wrap: wrap;
+   flex-direction: row;
  
 
 
@@ -497,4 +567,54 @@ flex-direction: column;
 .cont-for-fotter-contact-logo li{
 
     padding: 10px 10px;
+}
+
+/*following code for responsive*/
+
+
+@media (max-width:1200px){
+
+    .cont-for-welcome{
+
+        display: flex;
+        min-height: 700px;
+        flex-direction: column;
+    }
+
+    
+
+
+    .manuallymessaging-video{
+
+    display: none;
+
+    }
+   
+
+    .cont-for-fotter{
+
+        display: flex;
+        flex-direction: column;
+      
+     }
+
+     .navi-links{
+
+        display: none;
+     }
+
+     .navbar{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .what-bot-do-list{
+
+        display: flex;
+        max-width: 1400px;
+        width: 80%;
+        flex-direction: column;
+       
+    }
 }
