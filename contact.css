@@ -91,139 +91,98 @@
 
     display: none;
 }
+/*message*/
+.cont-3{
 
-
-
-
-/*following code for our services welcome*/
-
-.cont-for-our-services-welcome{
-
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding-top: 80px;
-}
-
-.cont-for-our-services-titile{
-
-    font-family: inter,poppins,sans-serif,'Courier New', Courier, monospace;
-    color: #F3F5FF;
-    font-size: 25px;
-}
-.cont-for-our-services-para{
-
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
-}
-.cont-for-our-services-para h3{
-
-    font-family: inter,poppins,sans-serif,'Courier New', Courier, monospace;
-    color: #F3F5FF;
-    font-weight: 400;
-    font-size: 20px;
-    max-width: 600px;
+   
+    margin-top: 100px;
 
 }
+.cont-for-message{
 
 
-.cont-for-services-list{
+max-width: 1200px;
+width: 100%;
 
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
 
 
 }
+.cont-for-title-Message{
 
     
-
-/*following code for services lists*/
-.cont-for-services-bg{
-
-    background-color: black;
-}
-.cont-for-services{
-
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    font-family: Inter,sans-serif;
+    padding-top: 40px;
     padding-bottom: 40px;
-    
+    color: white;
 }
-.cont-for-services-column{
-
-
-   display: flex;
-   justify-content: space-between;
-   flex-direction: row;
-   max-width: 900px;
-   
- 
-   
-
-
-}
-.cont-for-services-list{
+.cont-for-form{
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    max-width:600px;
-    background-color: rgb(56, 55, 55);
-    margin-top: 20px;
-    margin-bottom: 20px;
-   
+}
+.cont-for-form2{
 
+    display: flex;
 
 }
-.cont-for-services-list li{
+.cont-for-two-input{
 
-    margin-top: 15px;
-    margin-bottom: 15px;
-  
-}
-
-.cont-for-services-list li img{
-
-    height: 100px;
-
-}
-.cont-for-services-list li h1{
-
-    font-family: Inter,'Courier New', Courier, monospace,sans-serif;
-    color: white;
-}
-.cont-for-services li h3{
-
-    font-family: Inter,poppins,'Courier New', Courier, monospace,sans-serif;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: wheat;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
-.cont-for-services-list li button{
+.cont-for-third-input{
 
-    background-color: #235298;
-    padding: 20px 60px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    font-family: Inter,'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: 900;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.cont-for-two-input input{
 
+    height: 80px;
+    width: 80%;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.cont-for-third-input input{
+
+    height: 200px;
+    width: 80%;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.cont-for-send-button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.cont-for-send-button button{
+
+    
+    max-width: 600px;
+    width: 100%;
+    border: none;
+    height: 80px;
+    background-color: #091F66;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
 /*following code for fotter...*/
 
 .cont-for-fotter-bg{
@@ -383,45 +342,56 @@ width: 100%;
 
     padding: 10px 10px;
 }
-/*following code for responsive*/
+
+@media (max-width:1200px){
 
 
-@media (max-width:1024px){
+.navi-links{
 
-   
-
-     .navi-links{
-
-        display: none;
-     }
-     
-    
-.cont-for-services-column{
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top:100px;
-    
- 
- 
- }
-
- .cont-for-fotter{
+    display: none;
+}
+.cont-for-fotter{
 
     display: flex;
     flex-direction: column;
   
  }
+
+ .navi-links{
+
+    display: none;
+ }
+
  .navbar{
 
-    display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
  }
+ .cont-for-form2{
 
+    display: flex;
+    flex-direction: column;
+ }
+.cont-for-form2 input{
 
+    width: 100%;
+   
+}
+
+.cont-for-two-input div{
+
+    margin:20px;
+}
+.cont-for-third-input {
+
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.cont-for-send-button{
+
+    margin: 20px;
+}
 }
